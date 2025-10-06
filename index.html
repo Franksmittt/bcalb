@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Battery Centre Alberton | Expert Battery Services & Free Testing</title>
+    <meta name="description" content="The Alberton specialists for guaranteed battery power. Use our battery finder, meet the team, and get a factory-certified installation from a brand trusted since 1969.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS (Animate on Scroll) Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Swiper.js (for Hero Slider) -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Custom Configuration & Styles -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'charcoal': '#1D1D1D',
+                        'brand-yellow': '#FBBF24',
+                        'light-charcoal': '#2D2D2D',
+                        'off-white': '#F9FAFB',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .mobile-menu-open { max-height: 500px; transition: max-height 0.4s ease-in-out; }
+        .mobile-menu-closed { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-in-out; }
+        .cta-button:hover { transform: scale(1.05); box-shadow: 0 4px 20px rgba(251, 191, 36, 0.5); }
+        
+        /* Hero Slider Specifics */
+        .hero-swiper .swiper-slide { height: calc(100vh - 5rem); min-height: 500px; }
+        .hero-swiper .swiper-button-next, .hero-swiper .swiper-button-prev { color: #FBBF24; }
+        .hero-swiper .swiper-pagination-bullet-active { background-color: #FBBF24; }
+
+        /* Infinite Review Scroller Styles */
+        .review-scroll-container {
+            width: 100%;
+            overflow: hidden;
+            -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        }
+        .review-track {
+            display: flex;
+            width: calc(384px * 10);
+            animation: scrollReviews 40s linear infinite;
+        }
+        .review-track:hover { animation-play-state: paused; }
+        @keyframes scrollReviews {
+            from { transform: translateX(0); }
+            to { transform: translateX(calc(-384px * 5)); }
+        }
+        .review-card { width: 352px; flex-shrink: 0; }
+
+        .faq-question.open .faq-chevron { transform: rotate(180deg); }
+        .faq-answer { transition: max-height 0.3s ease-out; }
+
+        /* Active Nav Link Style */
+        .nav-link.text-brand-yellow { font-weight: 600; /* semibold */ }
+    </style>
+</head>
+<body class="bg-off-white font-sans">
+
+    <!-- [RE-ENGINEERED] HEADER / NAVIGATION -->
+    <header class="bg-charcoal shadow-xl sticky top-0 z-50 h-20 border-b border-light-charcoal/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-xl font-extrabold tracking-wide text-white uppercase rounded-lg p-2 font-display">
+                <span class="text-brand-yellow">FIRST BATTERY CENTRE</span> ALBERTON
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex md:space-x-8 items-center">
+                <a href="#battery-finder" class="nav-link text-white hover:text-brand-yellow text-sm font-light uppercase tracking-wider transition-colors duration-300">Find Your Battery</a>
+                <a href="#reviews" class="nav-link text-white hover:text-brand-yellow text-sm font-light uppercase tracking-wider transition-colors duration-300">Reviews</a>
+                <a href="#branch-info" class="nav-link text-white hover:text-brand-yellow text-sm font-light uppercase tracking-wider transition-colors duration-300">Visit Us</a>
+                <a href="#faq" class="nav-link text-white hover:text-brand-yellow text-sm font-light uppercase tracking-wider transition-colors duration-300">FAQ</a>
+            </nav>
+
+            <!-- Desktop CTAs -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="tel:+27118698288" class="flex items-center text-white hover:text-brand-yellow transition-colors" title="Call First Battery Centre Alberton">
+                    <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg>
+                    <span class="text-sm font-bold">(011) 869 8288</span>
+                </a>
+                <a href="tel:+27118698288" class="cta-button transition-transform inline-flex items-center px-4 py-2 text-sm font-bold rounded-xl shadow-lg text-charcoal bg-brand-yellow hover:bg-yellow-400">
+                    CALL US NOW
+                </a>
+            </div>
+
+            <!-- Mobile Button -->
+            <div class="md:hidden">
+                <button data-target="mobile-menu" class="mobile-toggle p-2 rounded-xl text-white hover:text-brand-yellow">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu-closed md:hidden bg-charcoal">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#battery-finder" class="text-white hover:bg-light-charcoal block px-3 py-2 rounded-md text-base font-medium">Find Your Battery</a>
+                <a href="#reviews" class="text-white hover:bg-light-charcoal block px-3 py-2 rounded-md text-base font-medium">Reviews</a>
+                <a href="#branch-info" class="text-white hover:bg-light-charcoal block px-3 py-2 rounded-md text-base font-medium">Visit Us</a>
+                <a href="#faq" class="text-white hover:bg-light-charcoal block px-3 py-2 rounded-md text-base font-medium">FAQ</a>
+                <a href="tel:+27118698288" class="text-charcoal bg-brand-yellow hover:bg-yellow-400 block px-3 py-3 mt-4 text-base font-bold text-center rounded-xl">CALL US NOW</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SLIDER SECTION -->
+        <section>
+            <div class="swiper-container hero-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg-charcoal flex items-center justify-center text-center"><div class="z-10 p-6"><h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-black text-white uppercase leading-tight tracking-tight">GUARANTEED POWER FOR <span class="text-brand-yellow">ALBERTON.</span></h1><p class="text-xl text-gray-200 mt-4 mb-8 font-medium max-w-2xl mx-auto">Factory-certified batteries with nationwide warranties, fitted with precision by your local experts.</p><a href="#cta-footer" class="cta-button inline-flex items-center px-8 py-3 text-lg font-bold rounded-full shadow-2xl text-charcoal bg-brand-yellow hover:bg-yellow-400 transition-transform">BOOK YOUR FREE TEST</a></div></div>
+                    <div class="swiper-slide bg-charcoal flex items-center justify-center text-center"><div class="z-10 p-6"><h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-black text-white uppercase leading-tight tracking-tight">50+ YEARS OF <span class="text-brand-yellow">PROVEN EXPERTISE.</span></h1><p class="text-xl text-gray-200 mt-4 mb-8 font-medium max-w-2xl mx-auto">Trust the heritage of South Africa's leading battery network, delivered with personal service right here in Alberton.</p><a href="#compliance-grid" class="cta-button inline-flex items-center px-8 py-3 text-lg font-bold rounded-full shadow-2xl text-charcoal bg-brand-yellow hover:bg-yellow-400 transition-transform">DISCOVER OUR GUARANTEE</a></div></div>
+                    <div class="swiper-slide bg-charcoal flex items-center justify-center text-center"><div class="z-10 p-6"><h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-black text-white uppercase leading-tight tracking-tight">FREE DIAGNOSTICS. <span class="text-brand-yellow">HONEST ADVICE.</span></h1><p class="text-xl text-gray-200 mt-4 mb-8 font-medium max-w-2xl mx-auto">Don't guess your battery's health. Get a 100% free, no-obligation analysis from our certified technicians today.</p><a href="#branch-info" class="cta-button inline-flex items-center px-8 py-3 text-lg font-bold rounded-full shadow-2xl text-charcoal bg-brand-yellow hover:bg-yellow-400 transition-transform">VISIT US TODAY</a></div></div>
+                </div>
+                <div class="swiper-pagination"></div><div class="swiper-button-next"></div><div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- CREDIBILITY BAR -->
+        <section class="bg-light-charcoal" data-aos="fade-up"><div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center py-8 px-4"><div class="text-white"><p class="text-3xl lg:text-4xl font-bold text-brand-yellow">50+</p><p class="text-sm uppercase tracking-wider text-gray-300">Years Heritage</p></div><div class="text-white"><p class="text-3xl lg:text-4xl font-bold text-brand-yellow">10,000+</p><p class="text-sm uppercase tracking-wider text-gray-300">Batteries Fitted</p></div><div class="text-white"><p class="text-3xl lg:text-4xl font-bold text-brand-yellow">100%</p><p class="text-sm uppercase tracking-wider text-gray-300">Certified Technicians</p></div><div class="text-white"><p class="text-3xl lg:text-4xl font-bold text-brand-yellow">24/7</p><p class="text-sm uppercase tracking-wider text-gray-300">National Support</p></div></div></section>
+
+        <!-- INTERACTIVE BATTERY FINDER -->
+        <section id="battery-finder" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-charcoal font-display" data-aos="fade-up">Find the Perfect Battery. Instantly.</h2>
+                <p class="mt-4 text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">Get an expert recommendation in seconds. No more guesswork.</p>
+                <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4" data-aos="fade-up" data-aos-delay="200">
+                    <select id="vehicle-make" class="block w-full p-4 border-gray-300 rounded-lg shadow-sm focus:ring-brand-yellow focus:border-brand-yellow"><option>1. Select Make</option><option>Toyota</option><option>Ford</option><option>Volkswagen</option><option>BMW</option></select>
+                    <select id="vehicle-model" class="block w-full p-4 border-gray-300 rounded-lg shadow-sm focus:ring-brand-yellow focus:border-brand-yellow"><option>2. Select Model</option></select>
+                    <select id="vehicle-year" class="block w-full p-4 border-gray-300 rounded-lg shadow-sm focus:ring-brand-yellow focus:border-brand-yellow"><option>3. Select Year</option></select>
+                </div>
+                <button id="find-battery-btn" class="mt-6 cta-button inline-flex items-center px-10 py-3 text-base font-bold rounded-full shadow-lg text-white bg-charcoal hover:bg-gray-800 transition-transform" data-aos="fade-up" data-aos-delay="300">FIND MY BATTERY</button>
+                <div id="battery-result" class="hidden mt-10 p-8 bg-off-white rounded-lg shadow-xl border border-gray-200 text-left flex flex-col md:flex-row items-center gap-8">
+                    <img src="https://placehold.co/150x150/FBBF24/1D1D1D?text=FBC+652" alt="Recommended Battery" class="w-32 h-32 rounded-lg object-cover">
+                    <div><p class="text-sm font-semibold text-brand-yellow">RECOMMENDED FOR YOUR VEHICLE</p><h3 class="text-2xl font-bold text-charcoal mt-1">First National Battery - Model 652</h3><p class="text-gray-600 mt-2">The ideal choice for reliability and starting power, backed by a 24-month nationwide warranty. In stock and ready for certified installation.</p><a href="#cta-footer" class="mt-4 inline-block font-bold text-charcoal hover:text-brand-yellow">Request a Quote →</a></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- GOOGLE REVIEWS MARQUEE -->
+        <section id="reviews" class="py-16 sm:py-24 bg-charcoal text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <p class="text-brand-yellow font-semibold uppercase tracking-widest text-sm mb-2">A Constant Stream of Success</p>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold font-display">Real Feedback from Alberton Drivers.</h2>
+                </div>
+                <div class="review-scroll-container" data-aos="fade-up">
+                    <div class="review-track space-x-8">
+                        <!-- Card Set 1 (Originals) -->
+                        <div class="review-card p-6 bg-white rounded-xl shadow-lg flex flex-col justify-between">
+                            <div><div class="flex items-center mb-2"><svg class="w-6 h-6 mr-2 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M21.35,11.1H12.18V13.83H18.69C18.36,17.64 15.19,19.27 12.19,19.27C8.36,19.27 5,16.25 5,12.5C5,8.75 8.36,5.73 12.19,5.73C15.28,5.73 17.1,6.7 17.1,6.7L19,4.72C19,4.72 16.56,2.5 12.19,2.5C6.42,2.5 2,7.45 2,12.5C2,17.55 6.42,22.5 12.19,22.5C17.9,22.5 21.58,18.33 21.58,12.91C21.58,12.21 21.48,11.66 21.35,11.1Z"></path></svg><span class="font-bold text-charcoal">Verified Google Review</span></div><div class="text-brand-yellow text-xl mb-3">★★★★★</div><p class="text-gray-700 italic">"Absolutely thrilled with my purchase! Got a high-quality battery at an unbelievable price. My car starts like a charm every time."</p></div><p class="text-sm font-semibold text-charcoal mt-4">— A. Naidoo</p>
+                        </div>
+                        <div class="review-card p-6 bg-white rounded-xl shadow-lg flex flex-col justify-between">
+                            <div><div class="flex items-center mb-2"><svg class="w-6 h-6 mr-2 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M21.35,11.1H12.18V13.83H18.69C18.36,17.64 15.19,19.27 12.19,19.27C8.36,19.27 5,16.25 5,12.5C5,8.75 8.36,5.73 12.19,5.73C15.28,5.73 17.1,6.7 17.1,6.7L19,4.72C19,4.72 16.56,2.5 12.19,2.5C6.42,2.5 2,7.45 2,12.5C2,17.55 6.42,22.5 12.19,22.5C17.9,22.5 21.58,18.33 21.58,12.91C21.58,12.21 21.48,11.66 21.35,11.1Z"></path></svg><span class="font-bold text-charcoal">Verified Google Review</span></div><div class="text-brand-yellow text-xl mb-3">★★★★★</div><p class="text-gray-700 italic">"Excellent, speedy service provided by Friendly and competent staff. Can highly recommend."</p></div><p class="text-sm font-semibold text-charcoal mt-4">— J. Pienaar</p>
+                        </div>
+                        <div class="review-card p-6 bg-white rounded-xl shadow-lg flex flex-col justify-between">
+                            <div><div class="flex items-center mb-2"><svg class="w-6 h-6 mr-2 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M21.35,11.1H12.18V13.83H18.69C18.36,17.64 15.19,19.27 12.19,19.27C8.36,19.27 5,16.25 5,12.5C5,8.75 8.36,5.73 12.19,5.73C15.28,5.73 17.1,6.7 17.1,6.7L19,4.72C19,4.72 16.56,2.5 12.19,2.5C6.42,2.5 2,7.45 2,12.5C2,17.55 6.42,22.5 12.19,22.5C17.9,22.5 21.58,18.33 21.58,12.91C21.58,12.21 21.48,11.66 21.35,11.1Z"></path></svg><span class="font-bold text-charcoal">Verified Google Review</span></div><div class="text-brand-yellow text-xl mb-3">★★★★★</div><p class="text-gray-700 italic">"My car runs smoothly, and I didn't even have to empty my wallet. So grateful for this affordable and high-quality solution!"</p></div><p class="text-sm font-semibold text-charcoal mt-4">— T. Khumalo</p>
+                        </div>
+                        <div class="review-card p-6 bg-white rounded-xl shadow-lg flex flex-col justify-between">
+                            <div><div class="flex items-center mb-2"><svg class="w-6 h-6 mr-2 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M21.35,11.1H12.18V13.83H18.69C18.36,17.64 15.19,19.27 12.19,19.27C8.36,19.27 5,16.25 5,12.5C5,8.75 8.36,5.73 12.19,5.73C15.28,5.73 17.1,6.7 17.1,6.7L19,4.72C19,4.72 16.56,2.5 12.19,2.5C6.42,2.5 2,7.45 2,12.5C2,17.55 6.42,22.5 12.19,22.5C17.9,22.5 21.58,18.33 21.58,12.91C21.58,12.21 21.48,11.66 21.35,11.1Z"></path></svg><span class="font-bold text-charcoal">Verified Google Review</span></div><div class="text-brand-yellow text-xl mb-3">★★★★★</div><p class="text-gray-700 italic">"The guys were very helpful."</p></div><p class="text-sm font-semibold text-charcoal mt-4">— L. Van Der Merwe</p>
+                        </div>
+                        <div class="review-card p-6 bg-white rounded-xl shadow-lg flex flex-col justify-between">
+                            <div><div class="flex items-center mb-2"><svg class="w-6 h-6 mr-2 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M21.35,11.1H12.18V13.83H18.69C18.36,17.64 15.19,19.27 12.19,19.27C8.36,19.27 5,16.25 5,12.5C5,8.75 8.36,5.73 12.19,5.73C15.28,5.73 17.1,6.7 17.1,6.7L19,4.72C19,4.72 16.56,2.5 12.19,2.5C6.42,2.5 2,7.45 2,12.5C2,17.55 6.42,22.5 12.19,22.5C17.9,22.5 21.58,18.33 21.58,12.91C21.58,12.21 21.48,11.66 21.35,11.1Z"></path></svg><span class="font-bold text-charcoal">Verified Google Review</span></div><div class="text-brand-yellow text-xl mb-3">★★★★★</div><p class="text-gray-700 italic">"Five-star service, honest advice and speedy service. Highly recommended."</p></div><p class="text-sm font-semibold text-charcoal mt-4">— D. Smith</p>
+                        </div>
+
+                        <!-- Card Set 2 (Duplicates for seamless loop) -->
+                        <div class="review-card p-6 bg-white rounded-xl shadow-lg flex flex-col justify-between">
+                            <div><div class="flex items-center mb-2"><svg class="w-6 h-6 mr-2 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M21.35,11.1H12.18V13.83H18.69C18.36,17.64 15.19,19.27 12.19,19.27C8.36,19.27 5,16.25 5,12.5C5,8.75 8.36,5.73 12.19,5.73C15.28,5.73 17.1,6.7 17.1,6.7L19,4.72C19,4.72 16.56,2.5 12.19,2.5C6.42,2.5 2,7.45 2,12.5C2,17.55 6.42,22.5 12.19,22.5C17.9,22.5 21.58,18.33 21.58,12.91C21.58,12.21 21.48,11.66 21.35,11.1Z"></path></svg><span class="font-bold text-charcoal">Verified Google Review</span></div><div class="text-brand-yellow text-xl mb-3">★★★★★</div><p class="text-gray-700 italic">"Absolutely thrilled with my purchase! Got a high-quality battery at an unbelievable price. My car starts like a charm every time."</p></div><p class="text-sm font-semibold text-charcoal mt-4">— A. Naidoo</p>
+                        </div>
+                        <div class="review-card p-6 bg-white rounded-xl shadow-lg flex flex-col justify-between">
+                            <div><div class="flex items-center mb-2"><svg class="w-6 h-6 mr-2 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M21.35,11.1H12.18V13.83H18.69C18.36,17.64 15.19,19.27 12.19,19.27C8.36,19.27 5,16.25 5,12.5C5,8.75 8.36,5.73 12.19,5.73C15.28,5.73 17.1,6.7 17.1,6.7L19,4.72C19,4.72 16.56,2.5 12.19,2.5C6.42,2.5 2,7.45 2,12.5C2,17.55 6.42,22.5 12.19,22.5C17.9,22.5 21.58,18.33 21.58,12.91C21.58,12.21 21.48,11.66 21.35,11.1Z"></path></svg><span class="font-bold text-charcoal">Verified Google Review</span></div><div class="text-brand-yellow text-xl mb-3">★★★★★</div><p class="text-gray-700 italic">"Excellent, speedy service provided by Friendly and competent staff. Can highly recommend."</p></div><p class="text-sm font-semibold text-charcoal mt-4">— J. Pienaar</p>
+                        </div>
+                        <div class="review-card p-6 bg-white rounded-xl shadow-lg flex flex-col justify-between">
+                            <div><div class="flex items-center mb-2"><svg class="w-6 h-6 mr-2 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M21.35,11.1H12.18V13.83H18.69C18.36,17.64 15.19,19.27 12.19,19.27C8.36,19.27 5,16.25 5,12.5C5,8.75 8.36,5.73 12.19,5.73C15.28,5.73 17.1,6.7 17.1,6.7L19,4.72C19,4.72 16.56,2.5 12.19,2.5C6.42,2.5 2,7.45 2,12.5C2,17.55 6.42,22.5 12.19,22.5C17.9,22.5 21.58,18.33 21.58,12.91C21.58,12.21 21.48,11.66 21.35,11.1Z"></path></svg><span class="font-bold text-charcoal">Verified Google Review</span></div><div class="text-brand-yellow text-xl mb-3">★★★★★</div><p class="text-gray-700 italic">"My car runs smoothly, and I didn't even have to empty my wallet. So grateful for this affordable and high-quality solution!"</p></div><p class="text-sm font-semibold text-charcoal mt-4">— T. Khumalo</p>
+                        </div>
+                        <div class="review-card p-6 bg-white rounded-xl shadow-lg flex flex-col justify-between">
+                            <div><div class="flex items-center mb-2"><svg class="w-6 h-6 mr-2 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M21.35,11.1H12.18V13.83H18.69C18.36,17.64 15.19,19.27 12.19,19.27C8.36,19.27 5,16.25 5,12.5C5,8.75 8.36,5.73 12.19,5.73C15.28,5.73 17.1,6.7 17.1,6.7L19,4.72C19,4.72 16.56,2.5 12.19,2.5C6.42,2.5 2,7.45 2,12.5C2,17.55 6.42,22.5 12.19,22.5C17.9,22.5 21.58,18.33 21.58,12.91C21.58,12.21 21.48,11.66 21.35,11.1Z"></path></svg><span class="font-bold text-charcoal">Verified Google Review</span></div><div class="text-brand-yellow text-xl mb-3">★★★★★</div><p class="text-gray-700 italic">"The guys were very helpful."</p></div><p class="text-sm font-semibold text-charcoal mt-4">— L. Van Der Merwe</p>
+                        </div>
+                        <div class="review-card p-6 bg-white rounded-xl shadow-lg flex flex-col justify-between">
+                            <div><div class="flex items-center mb-2"><svg class="w-6 h-6 mr-2 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M21.35,11.1H12.18V13.83H18.69C18.36,17.64 15.19,19.27 12.19,19.27C8.36,19.27 5,16.25 5,12.5C5,8.75 8.36,5.73 12.19,5.73C15.28,5.73 17.1,6.7 17.1,6.7L19,4.72C19,4.72 16.56,2.5 12.19,2.5C6.42,2.5 2,7.45 2,12.5C2,17.55 6.42,22.5 12.19,22.5C17.9,22.5 21.58,18.33 21.58,12.91C21.58,12.21 21.48,11.66 21.35,11.1Z"></path></svg><span class="font-bold text-charcoal">Verified Google Review</span></div><div class="text-brand-yellow text-xl mb-3">★★★★★</div><p class="text-gray-700 italic">"Five-star service, honest advice and speedy service. Highly recommended."</p></div><p class="text-sm font-semibold text-charcoal mt-4">— D. Smith</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The "Connection Hub" (formerly Branch Info) -->
+        <section id="branch-info" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <p class="text-brand-yellow font-semibold uppercase tracking-widest text-sm mb-2">Your Direct Line to Power</p>
+                    <h2 class="text-4xl sm:text-5xl font-extrabold text-charcoal font-display">Connect with Your Alberton Experts</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Whether you need urgent assistance, a quick quote, or expert advice, we're here to help. Choose the best way to reach us below.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-off-white border border-gray-200 rounded-xl p-8 text-center shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-charcoal text-brand-yellow rounded-full w-16 h-16 flex items-center justify-center mx-auto"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg></div>
+                        <h3 class="text-2xl font-bold text-charcoal mt-6">Immediate Assistance</h3><p class="text-gray-600 mt-2 mb-6">For urgent help or to speak with a technician directly.</p><a href="tel:+27118698288" class="cta-button inline-flex items-center px-8 py-3 text-base font-bold rounded-full shadow-lg text-white bg-charcoal hover:bg-gray-800 transition-transform">CALL (011) 869 8288</a>
+                    </div>
+                    <div class="bg-off-white border border-gray-200 rounded-xl p-8 text-center shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-charcoal text-brand-yellow rounded-full w-16 h-16 flex items-center justify-center mx-auto"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg></div>
+                        <h3 class="text-2xl font-bold text-charcoal mt-6">Plan Your Visit</h3><p class="text-gray-600 mt-2 mb-6">Come see us in person for a free test and fitment.</p><a href="http://googleusercontent.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.481290928019!2d28.12190831503148!3d-26.2783639834057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95081f08e55e69%3A0x6d932144415c926a!2s93%20Voortrekker%20Rd%2C%20New%20Redruth%2C%20Alberton%2C%201449%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1667828082989!5m2!1sen!2sus" target="_blank" class="cta-button inline-flex items-center px-8 py-3 text-base font-bold rounded-full shadow-lg text-white bg-charcoal hover:bg-gray-800 transition-transform">GET DIRECTIONS</a>
+                    </div>
+                    <div class="bg-off-white border border-gray-200 rounded-xl p-8 text-center shadow-lg md:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-charcoal text-brand-yellow rounded-full w-16 h-16 flex items-center justify-center mx-auto"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" /></svg></div>
+                        <h3 class="text-2xl font-bold text-charcoal mt-6">Quick Question?</h3><p class="text-gray-600 mt-2 mb-6">Send us a message for non-urgent inquiries or stock checks.</p><a href="https://wa.me/27605298445" target="_blank" class="cta-button inline-flex items-center px-8 py-3 text-base font-bold rounded-full shadow-lg text-white bg-charcoal hover:bg-gray-800 transition-transform">CHAT ON WHATSAPP</a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                    <div data-aos="fade-right" class="h-96 lg:h-full w-full rounded-xl overflow-hidden shadow-2xl">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.481290928019!2d28.12190831503148!3d-26.2783639834057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95081f08e55e69%3A0x6d932144415c926a!2s93%20Voortrekker%20Rd%2C%20New%20Redruth%2C%20Alberton%2C%201449%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1667828082989!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div data-aos="fade-left" class="bg-gray-100 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-charcoal mb-4">Operating Hours</h3>
+                        <ul class="text-gray-700 space-y-3">
+                            <li class="flex justify-between border-b border-gray-300 pb-3"><span class="font-medium">Monday - Friday:</span><span class="font-bold">8:00 AM – 5:00 PM</span></li>
+                            <li class="flex justify-between border-b border-gray-300 pb-3"><span class="font-medium">Saturday:</span><span class="font-bold">8:00 AM – 1:00 PM</span></li>
+                            <li class="flex justify-between"><span class="font-medium">Sunday & Holidays:</span><span class="font-bold text-brand-yellow">CLOSED</span></li>
+                        </ul>
+                        <p class="text-sm text-gray-500 mt-6">*Callouts may be available upon request. Please call ahead to confirm.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- [RE-ENGINEERED] FAQ ACCORDION -->
+        <section id="faq" class="py-16 sm:py-24 bg-off-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-charcoal font-display">Frequently Asked Questions</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Column 1 -->
+                    <div class="space-y-4">
+                        <div class="faq-item bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                            <button class="faq-question w-full flex justify-between items-center text-left text-lg font-bold text-charcoal"><span>How long does a free battery test take?</span><svg class="faq-chevron w-5 h-5 text-gray-500 transition-transform transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></button>
+                            <div class="faq-answer overflow-hidden max-h-0"><p class="mt-4 text-gray-600">Our comprehensive battery and charging system test is quick and efficient, typically taking only 5-10 minutes. You can wait in your vehicle or our waiting area.</p></div>
+                        </div>
+                        <div class="faq-item bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                            <button class="faq-question w-full flex justify-between items-center text-left text-lg font-bold text-charcoal"><span>Do I need to book an appointment?</span><svg class="faq-chevron w-5 h-5 text-gray-500 transition-transform transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></button>
+                            <div class="faq-answer overflow-hidden max-h-0"><p class="mt-4 text-gray-600">No appointment is necessary for a free battery test! For installations, calling ahead can minimize your wait time, but we always accommodate walk-ins as quickly as possible.</p></div>
+                        </div>
+                        <div class="faq-item bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                            <button class="faq-question w-full flex justify-between items-center text-left text-lg font-bold text-charcoal"><span>What does the national warranty cover?</span><svg class="faq-chevron w-5 h-5 text-gray-500 transition-transform transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></button>
+                            <div class="faq-answer overflow-hidden max-h-0"><p class="mt-4 text-gray-600">Our batteries come with a nationwide warranty against manufacturing defects. If you have any issues, you can get support at any First Battery Centre across South Africa.</p></div>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="space-y-4">
+                        <div class="faq-item bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                            <button class="faq-question w-full flex justify-between items-center text-left text-lg font-bold text-charcoal"><span>Do you offer call-out services?</span><svg class="faq-chevron w-5 h-5 text-gray-500 transition-transform transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></button>
+                            <div class="faq-answer overflow-hidden max-h-0"><p class="mt-4 text-gray-600">Yes, we do! If you're stuck in Alberton or a surrounding area, give us a call. We offer call-out services to get you back on the road. A call-out fee may apply.</p></div>
+                        </div>
+                        <div class="faq-item bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                            <button class="faq-question w-full flex justify-between items-center text-left text-lg font-bold text-charcoal"><span>What battery brands do you stock?</span><svg class="faq-chevron w-5 h-5 text-gray-500 transition-transform transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></button>
+                            <div class="faq-answer overflow-hidden max-h-0"><p class="mt-4 text-gray-600">We stock the full range of premium First National Battery (FNB) products, including the renowned Willard and Sabat brands, ensuring top-quality, locally manufactured power.</p></div>
+                        </div>
+                        <div class="faq-item bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                            <button class="faq-question w-full flex justify-between items-center text-left text-lg font-bold text-charcoal"><span>What payment methods do you accept?</span><svg class="faq-chevron w-5 h-5 text-gray-500 transition-transform transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></button>
+                            <div class="faq-answer overflow-hidden max-h-0"><p class="mt-4 text-gray-600">We accept a variety of payment methods for your convenience, including all major credit/debit cards (Visa, Mastercard), EFT, and cash.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section id="cta-footer" class="py-16 sm:py-20 bg-brand-yellow"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="zoom-in"><h2 class="text-3xl sm:text-4xl font-extrabold text-charcoal mb-4 font-display">Ready for Guaranteed Power?</h2><p class="text-lg text-charcoal mb-8 max-w-2xl mx-auto font-medium">Stop guessing. Get your free, expert battery health check from the most trusted team in Alberton today.</p><a href="tel:+27118698288" class="cta-button inline-flex items-center px-10 py-4 text-xl font-black rounded-full shadow-2xl text-white bg-charcoal hover:bg-gray-800 transition-transform">CALL TO BOOK NOW</a></div></section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-charcoal text-white pt-16 sm:pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div class="md:col-span-2 lg:col-span-1" data-aos="fade-up"><a href="#" class="text-2xl font-extrabold tracking-wide text-white uppercase font-display"><span class="text-brand-yellow">FIRST</span> BATTERY CENTRE ALBERTON</a><p class="mt-4 text-gray-400 text-sm leading-relaxed">Alberton's Certified Power Experts, Backed by a National Legacy Since 1969.</p><div class="mt-6 flex space-x-5"><a href="#" class="text-gray-400 hover:text-brand-yellow transition-colors"><span class="sr-only">Facebook</span><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a><a href="#" class="text-gray-400 hover:text-brand-yellow transition-colors"><span class="sr-only">Instagram</span><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zm0 1.62c-2.403 0-2.748.01-3.727.055-1.01.046-1.634.208-2.203.432a3.272 3.272 0 00-1.18 1.18 3.272 3.272 0 00-.432 2.203c-.045.979-.055 1.323-.055 3.727s.01 2.748.055 3.727c.046 1.01.208 1.634.432 2.203a3.272 3.272 0 001.18 1.18 3.272 3.272 0 002.203.432c.979.045 1.323.055 3.727.055s2.748-.01 3.727-.055c1.01-.046 1.634-.208 2.203-.432a3.272 3.272 0 001.18-1.18 3.272 3.272 0 00.432-2.203c.045-.979.055-1.323.055-3.727s-.01-2.748-.055-3.727c-.046-1.01-.208-1.634-.432-2.203a3.272 3.272 0 00-1.18-1.18 3.272 3.272 0 00-2.203-.432c-.979-.045-1.323-.055-3.727-.055z" clip-rule="evenodd" /><path d="M16.75 8.25a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" /><path fill-rule="evenodd" d="M12 6.875A5.125 5.125 0 1012 17.125 5.125 5.125 0 0012 6.875zM12 15.5a3.5 3.5 0 110-7 3.5 3.5 0 010 7z" clip-rule="evenodd" /></svg></a></div></div>
+                <div data-aos="fade-up" data-aos-delay="100"><h3 class="text-base font-semibold uppercase tracking-wider text-brand-yellow">Navigation</h3><ul class="mt-4 space-y-3"><li><a href="#battery-finder" class="text-sm text-gray-400 hover:text-white transition-colors">Battery Finder</a></li><li><a href="#our-process" class="text-sm text-gray-400 hover:text-white transition-colors">Our Process</a></li><li><a href="#reviews" class="text-sm text-gray-400 hover:text-white transition-colors">Customer Reviews</a></li><li><a href="#faq" class="text-sm text-gray-400 hover:text-white transition-colors">FAQ</a></li></ul></div>
+                <div data-aos="fade-up" data-aos-delay="200"><h3 class="text-base font-semibold uppercase tracking-wider text-brand-yellow">Connect With Us</h3><ul class="mt-4 space-y-3 text-sm text-gray-400"><li class="flex items-start"><span class="sr-only">Address</span><svg class="h-5 w-5 mr-3 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg><span>93 Voortrekker Road, New Redruth, Alberton, 1449</span></li><li class="flex items-start"><span class="sr-only">Phone</span><svg class="h-5 w-5 mr-3 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg><a href="tel:+27118698288" class="hover:text-white transition-colors">(011) 869 8288</a></li></ul></div>
+                <div data-aos="fade-up" data-aos-delay="300"><h3 class="text-base font-semibold uppercase tracking-wider text-brand-yellow">Stay Powered</h3><p class="mt-4 text-sm text-gray-400">Get exclusive offers & maintenance tips directly from our Alberton experts.</p><form action="#" class="mt-4 flex flex-col sm:flex-row gap-2"><label for="email-address" class="sr-only">Email address</label><input type="email" name="email-address" id="email-address" autocomplete="email" required class="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-3 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-brand-yellow sm:text-sm" placeholder="Enter your email"><button type="submit" class="cta-button rounded-md bg-brand-yellow px-3 py-2 text-sm font-semibold text-charcoal shadow-sm hover:bg-yellow-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-yellow transition-transform flex-shrink-0">Notify Me</button></form></div>
+            </div>
+            <div class="mt-16 border-t border-light-charcoal py-8"><p class="text-xs text-center text-gray-500">&copy; 2025 First Battery Centre Alberton (Franchise). All Rights Reserved. <span class="mx-2">|</span> Concept by <a href="#" class="hover:text-brand-yellow">Apex Collective</a>.</p></div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LIBRARIES & CUSTOM SCRIPTS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({ duration: 800, once: true, offset: 100 });
+
+            new Swiper('.hero-swiper', {
+                loop: true,
+                effect: 'fade',
+                autoplay: { delay: 5000, disableOnInteraction: false },
+                pagination: { el: '.swiper-pagination', clickable: true },
+                navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            });
+
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileToggle && mobileMenu) {
+                mobileToggle.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('mobile-menu-open');
+                    mobileMenu.classList.toggle('mobile-menu-closed');
+                });
+            }
+
+            const findBtn = document.getElementById('find-battery-btn');
+            const resultDiv = document.getElementById('battery-result');
+            if (findBtn && resultDiv) {
+                findBtn.addEventListener('click', () => {
+                    resultDiv.classList.remove('hidden');
+                    resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                });
+            }
+
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                question.addEventListener('click', () => {
+                    const isOpen = question.classList.contains('open');
+                    faqItems.forEach(otherItem => {
+                        otherItem.querySelector('.faq-question').classList.remove('open');
+                        otherItem.querySelector('.faq-answer').style.maxHeight = '0px';
+                    });
+                    if (!isOpen) {
+                        question.classList.add('open');
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    }
+                });
+            });
+            
+            const sections = document.querySelectorAll('main section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 150) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('text-brand-yellow');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('text-brand-yellow');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

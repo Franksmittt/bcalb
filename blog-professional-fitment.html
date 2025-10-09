@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Battery Fitment in Centurion | First Battery Centre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 'sans': ['Montserrat', 'sans-serif'] },
+                    colors: {
+                        'brand-charcoal': '#212529',
+                        'brand-dark': '#1a1a1a',
+                        'brand-yellow': '#FFD100',
+                        'brand-gray-light': '#f3f4f6', 
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .nav-link-hover::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 100%; height: 2px; background-color: theme('colors.brand-yellow'); transform: scaleX(0); transform-origin: bottom right; transition: transform 0.3s ease-out; }
+        .nav-link-hover:hover::after { transform: scaleX(1); transform-origin: bottom left; }
+        html { scroll-behavior: smooth; }
+        #blog-post-hero { background-color: #1a1a1a; padding-top: 6rem; padding-bottom: 6rem; }
+        .article-content h2 { font-size: 1.875rem; font-weight: 800; margin-top: 2.5rem; margin-bottom: 1rem; color: #212529; }
+        .article-content h3 { font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0.75rem; color: #212529; }
+        .article-content p, .article-content ul, .article-content ol { font-size: 1.125rem; line-height: 1.75; color: #374151; margin-bottom: 1.25rem; }
+        .article-content ul, .article-content ol { padding-left: 1.75rem; }
+        .article-content strong, .article-content b { color: #212529; }
+        .article-content a { color: #D97706; text-decoration: underline; } .article-content a:hover { color: #B45309; }
+    </style>
+</head>
+<body class="bg-white">
+
+    <header class="bg-black shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                       <img class="h-10 w-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREMdsebtTlTcxvyDlVN6a5Cunw3qUDtHvbuoCcxKLGCjQVCIBaqONXl1I&s=10" alt="First Battery Centre Logo">
+                        <span class="hidden md:block text-white text-xl font-extrabold tracking-tight">First Battery Centre <span class="font-semibold text-brand-yellow">Centurion</span></span>
+                    </a>
+                </div>
+                <div class="flex-1 flex items-center justify-center">
+                    <nav class="hidden md:flex items-center space-x-8">
+                        <a href="index.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative nav-link-hover transition-colors duration-300">Home</a>
+                        <a href="our-batteries.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative nav-link-hover transition-colors duration-300">Our Batteries</a>
+                        <a href="our-services.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative nav-link-hover transition-colors duration-300">Our Services</a>
+                        <a href="our-blog.html" class="text-white px-3 py-2 rounded-md text-sm font-medium relative nav-link-hover transition-colors duration-300">Our Blog</a>
+                        <a href="contact.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative nav-link-hover transition-colors duration-300">Contact</a>
+                    </nav>
+                    <div class="flex md:hidden"><span class="text-white text-lg font-bold">Centurion</span></div>
+                </div>
+                <div class="flex items-center justify-end">
+                    <div class="hidden md:block ml-4">
+                        <a href="contact.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-bold rounded-md text-brand-dark bg-brand-yellow hover:bg-yellow-300">Book a FREE Battery Check</a>
+                    </div>
+                    <div class="-mr-2 flex md:hidden"><button id="mobile-menu-button" type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white"><span class="sr-only">Open main menu</span><svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg><svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></button></div>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="our-batteries.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Our Batteries</a>
+                <a href="our-services.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Our Services</a>
+                <a href="our-blog.html" class="text-white bg-gray-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Our Blog</a>
+                <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-700">
+                <div class="px-5"><a href="contact.html" class="block w-full text-center px-4 py-3 font-bold rounded-md text-brand-dark bg-brand-yellow">Book a FREE Check</a></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="blog-post-hero" class="text-white text-center">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <p class="text-base font-semibold text-brand-yellow uppercase tracking-wider">Expert Advice | Fitment Services</p>
+                <h1 class="mt-2 text-4xl md:text-5xl font-extrabold tracking-tight">Avoid the DIY Disaster: Why Professional Battery Fitment is Critical</h1>
+                <p class="mt-4 text-xl text-gray-300 max-w-2xl mx-auto">Discover why modern cars demand specialist installation to avoid costly electronic damage.</p>
+            </div>
+        </section>
+
+        <section class="bg-white py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-12 lg:gap-12">
+                    
+                    <div class="lg:col-span-8">
+                        <article class="article-content">
+                            <p>It seems simple, right? Two terminals, one battery. You’ve replaced one before, so why pay for professional fitment?</p>
+                            <p>In a car built before 2005, you could probably get away with a quick swap. But your modern vehicle is a rolling computer network, and trying to change the battery yourself or trusting a generalist mechanic can trigger a surprisingly costly <strong>DIY Disaster</strong>.</p>
+                            <p>At First Battery Centre Centurion, we’re the specialists for a reason. Here’s why <strong>professional battery fitment</strong> is no longer optional—it’s absolutely critical for the health and safety of your car.</p>
+                            <h2>1. The Hidden Danger: Your Car's Electronic Brain</h2>
+                            <p>The biggest risk isn't an electric shock; it’s <strong>Vehicle Memory Loss</strong> and <strong>System Damage</strong>. Modern cars rely on an onboard computer (ECU) to manage everything from radio presets to fuel consumption, power steering, and safety systems. Disconnecting the battery abruptly can cause these systems to lose calibration or even trigger fault codes.</p>
+                            <p><strong>The Specialist Difference:</strong> Our Centurion technicians use specialized equipment to maintain power to your vehicle's systems <em>during</em> the changeover. We call it <strong>Memory Saving</strong>. This means your crucial settings remain intact, and you avoid an expensive trip to a dealership to reset your car’s systems.</p>
+                            <h2>2. The Start/Stop Revolution Demands Expertise</h2>
+                            <p>Does your car turn its engine off at a traffic light? If so, it uses <strong>Start/Stop technology</strong>, and it requires a specific battery (either <strong>AGM</strong> or <strong>EFB</strong>). Crucially, in many models, the vehicle’s <strong>Battery Management System (BMS)</strong> must be told that a new battery has been installed. If you skip this step, the car will continue to charge the new battery using the <em>old</em> battery’s profile, quickly leading to under- or over-charging. Result? A brand-new battery dies prematurely.</p>
+                            <p><strong>The Specialist Difference:</strong> We don't just fit the battery; we <strong>register the new battery with the BMS</strong>, ensuring your car's charging system works perfectly with the new power source from day one.</p>
+                            <h2>3. Precision: The Secret to a Long-Lasting Battery</h2>
+                            <p>A professional installation is about more than just wiring—it's about security, correct venting, and corrosion prevention.</p>
+                            <ul class="list-disc">
+                                <li><strong>Security:</strong> If the battery isn’t perfectly secured to the tray, it can vibrate, causing internal damage and shortening its lifespan. We ensure the fit is tight and exact.</li>
+                                <li><strong>Corrosion:</strong> We meticulously clean the terminals and apply preventative measures to stop power-robbing corrosion from eating away at your connections.</li>
+                                <li><strong>Venting:</strong> Some batteries must be correctly vented outside the vehicle cabin. Getting this wrong is a serious health hazard.</li>
+                            </ul>
+                            <h2>Get the Job Done Right, First Time, in Centurion</h2>
+                            <p>Don't risk hours of troubleshooting, frustrating warning lights, or damaging your expensive electronics just to save a few minutes. When you choose First Battery Centre Centurion, you get the assurance of professionals trained on every complex system, from basic cars to high-tech Start/Stop models.</p>
+                            <p><strong>The solution is simple:</strong> Drive in to <strong>203 Edison Crescent, Hennopspark</strong>, and let the specialists handle your <strong>expert battery fitment</strong>. We guarantee a precise installation and the confidence that your new <strong>Raylite</strong> battery is working exactly as it should be.</p>
+                        </article>
+                    </div>
+                    
+                    <aside class="lg:col-span-4 mt-12 lg:mt-0">
+                        <div class="sticky top-28 space-y-8">
+                            <div class="p-6 bg-brand-charcoal text-white rounded-lg shadow-xl border-l-4 border-brand-yellow">
+                                <h3 class="text-xl font-bold text-brand-yellow">Need Expert Fitment?</h3>
+                                <p class="mt-2 text-base text-gray-300">Protect your vehicle's electronics and ensure your new battery lasts. Let our specialists handle it.</p>
+                                <a href="contact.html" class="mt-4 block w-full text-center px-6 py-3 font-medium rounded-md text-brand-dark bg-brand-yellow hover:bg-yellow-300">Book Your Fitment</a>
+                            </div>
+                            <div class="p-6 bg-brand-gray-light rounded-lg shadow-md">
+                                <h3 class="text-xl font-bold text-brand-charcoal">Related Articles</h3>
+                                <ul class="mt-3 space-y-2 text-base text-gray-700">
+                                    <li><a href="blog-free-check.html" class="hover:text-brand-charcoal hover:underline font-medium">Why a Free Battery Check Matters</a></li>
+                                    <li><a href="blog-nationwide-warranty.html" class="hover:text-brand-charcoal hover:underline font-medium">Understanding Your Nationwide Warranty</a></li>
+                                </ul>
+                            </div>
+                            <div class="p-6 bg-white rounded-lg shadow-md border border-gray-200">
+                                <h3 class="text-xl font-bold text-brand-charcoal">Quick Contact</h3>
+                                <ul class="mt-3 space-y-2 text-gray-700"><li class="flex items-center space-x-2"><svg class="h-5 w-5 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg><span class="text-base">203 Edison Crescent, 0172</span></li><li class="flex items-center space-x-2"><svg class="h-5 w-5 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg><a href="tel:0125344900" class="text-base hover:text-brand-charcoal">012 534 4900</a></li></ul>
+                            </div>
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-gray-400">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="xl:grid xl:grid-cols-4 xl:gap-8">
+                <div class="space-y-8 xl:col-span-1">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <img class="h-10 w-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREMdsebtTlTcxvyDlVN6a5Cunw3qUDtHvbuoCcxKLGCjQVCIBaqONXl1I&s=10" alt="First Battery Centre Logo">
+                        <span class="text-white text-lg font-bold">First Battery Centre<br>Centurion</span>
+                    </a>
+                    <p class="text-sm">Your local experts for all automotive, leisure, and commercial battery needs in Centurion.</p>
+                </div>
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-3">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Quick Links</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li><a href="index.html" class="text-base hover:text-white">Home</a></li>
+                                <li><a href="our-batteries.html" class="text-base hover:text-white">Our Batteries</a></li>
+                                <li><a href="our-services.html" class="text-base hover:text-white">Our Services</a></li>
+                                <li><a href="our-blog.html" class="text-base hover:text-white">Our Blog</a></li>
+                                <li><a href="contact.html" class="text-base hover:text-white">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Our Expertise</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li><a href="our-services.html" class="text-base hover:text-white">Free Battery Testing</a></li>
+                                <li><a href="expert-fitment.html" class="text-base hover:text-white">Expert Fitment</a></li>
+                                <li><a href="our-batteries.html" class="text-base hover:text-white">Solar & Backup Power</a></li>
+                                <li><a href="our-batteries.html" class="text-base hover:text-white">Commercial Solutions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-1 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Visit Us</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li class="text-base">203 Edison Crescent,<br>Hennopspark, Centurion, 0172</li>
+                                <li><a href="tel:0125344900" class="text-base hover:text-white">012 534 4900</a></li>
+                                <li><a href="mailto:fbccenturion@gmail.com" class="text-base hover:text-white">fbccenturion@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8">
+                <p class="text-base text-center">&copy; 2025 First Battery Centre Centurion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button'), mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); mobileMenuButton.querySelector('svg.block').classList.toggle('hidden'); mobileMenuButton.querySelector('svg.hidden').classList.toggle('hidden'); });
+    </script>
+</body>
+</html>

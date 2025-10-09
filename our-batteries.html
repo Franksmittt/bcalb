@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raylite Batteries: Automotive, Deep Cycle & Solar | Centurion</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        // Custom Tailwind theme to match First Battery's brand palette
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-charcoal': '#212529',
+                        'brand-dark': '#1a1a1a',
+                        'brand-yellow': '#FFD100',
+                        'brand-gray-light': '#f3f4f6', 
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .nav-link-hover::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: theme('colors.brand-yellow');
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+        .nav-link-hover:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            height: 100%;
+        }
+        /* Style for the main page header */
+        #battery-hero {
+            background-color: #1a1a1a;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- HEADER V5 - Identical to other pages -->
+    <header class="bg-black shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <div class="hidden md:flex flex-shrink-0 items-center">
+                        <a href="index.html" class="flex items-center space-x-3">
+                           <img class="h-10 w-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREMdsebtTlTcxvyDlVN6a5Cunw3qUDtHvbuoCcxKLGCjQVCIBaqONXl1I&s=10" alt="First Battery Centre Logo">
+                            <span class="text-white text-xl font-extrabold tracking-tight">First Battery Centre <span class="font-semibold text-brand-yellow">Centurion</span></span>
+                        </a>
+                    </div>
+                    <div class="flex md:hidden flex-shrink-0 items-center">
+                         <a href="index.html"><img class="h-10 w-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREMdsebtTlTcxvyDlVN6a5Cunw3qUDtHvbuoCcxKLGCjQVCIBaqONXl1I&s=10" alt="First Battery Centre Logo"></a>
+                    </div>
+                </div>
+                <div class="flex-1 flex items-center justify-center">
+                    <nav class="hidden md:flex items-center space-x-8">
+                        <a href="index.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative nav-link-hover transition-colors duration-300">Home</a>
+                        <a href="#main-battery-content" class="text-white px-3 py-2 rounded-md text-sm font-medium relative nav-link-hover transition-colors duration-300 active-link">Our Batteries</a>
+                        <a href="services.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative nav-link-hover transition-colors duration-300">Our Services</a>
+                        <a href="contact.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative nav-link-hover transition-colors duration-300">Contact & Location</a>
+                    </nav>
+                    <div class="flex md:hidden"><span class="text-white text-lg font-bold">Centurion</span></div>
+                </div>
+                <div class="flex items-center justify-end">
+                    <div class="hidden md:block ml-4">
+                        <a href="contact.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-bold rounded-md text-brand-dark bg-brand-yellow hover:bg-yellow-300 transition-transform duration-200 hover:scale-105">Book a FREE Battery Check</a>
+                    </div>
+                    <div class="-mr-2 flex md:hidden">
+                        <button id="mobile-menu-button" type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#main-battery-content" class="text-white bg-gray-700 block px-3 py-2 rounded-md text-base font-medium">Our Batteries</a>
+                <a href="services.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Our Services</a>
+                <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact & Location</a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-700">
+                <div class="flex items-center px-5"><a href="contact.html" class="w-full text-center items-center px-4 py-3 border border-transparent text-base font-bold rounded-md text-brand-dark bg-brand-yellow hover:bg-yellow-300">Book a FREE Battery Check</a></div>
+                <div class="mt-4 px-5 pb-3"><p class="text-center text-xs font-semibold text-gray-400 tracking-wider uppercase">First Battery Centre: Centurion</p></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- BATTERY PAGE HEADER / HEADING (SEO Optimized) -->
+        <section id="battery-hero" class="text-white text-center">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+                    <span class="block text-brand-yellow">Raylite Batteries in Centurion:</span>
+                    <span class="block mt-2">The Ultimate Power for Every Vehicle & Application</span>
+                </h1>
+                <p class="mt-4 text-xl text-gray-300 max-w-2xl mx-auto">
+                    We exclusively stock <b>Raylite</b>—the trusted name in reliable, high-performance batteries, backed by South Africa's most comprehensive warranty.
+                </p>
+            </div>
+        </section>
+
+        <!-- MAIN BATTERY CONTENT - Product Segmentation & Detail -->
+        <section id="main-battery-content" class="bg-white py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Section Introduction -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start mb-16">
+                    <div class="lg:sticky lg:top-28"> 
+                        <h2 class="text-5xl font-extrabold text-brand-charcoal tracking-tight leading-snug">
+                            <span class="text-brand-yellow block mb-2">Find Your Perfect Match:</span>
+                            Automotive & Specialized Power
+                        </h2>
+                        <p class="mt-6 text-xl text-gray-600">
+                           Choosing the right battery depends on your vehicle's technology and your driving habits. Use this guide to understand the Raylite advantage and select the correct range for guaranteed performance.
+                        </p>
+                        <a href="contact.html" class="mt-8 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-charcoal hover:bg-black transition-colors duration-300">
+                            Get A Quote & Fitment Today
+                        </a>
+                    </div>
+                    
+                    <!-- Product Ranges Container -->
+                    <div class="space-y-12">
+                        
+                        <!-- Product 1: Automotive Gold & Bronze (High-Value / High-Volume) -->
+                        <div id="automotive" class="p-8 bg-brand-gray-light rounded-xl shadow-lg border-l-4 border-brand-yellow transform hover:shadow-2xl transition-all duration-300">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <svg class="h-8 w-8 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                                <h3 class="text-2xl font-extrabold text-brand-charcoal">Raylite Automotive Ranges</h3>
+                            </div>
+                            <p class="mt-2 text-sm font-semibold text-gray-600 uppercase tracking-wider">Reliable starting power for cars, bakkies & SUVs.</p>
+                            
+                            <h4 class="mt-4 text-lg font-bold text-brand-charcoal">Raylite Gold Range</h4>
+                            <p class="text-base text-gray-700">The premier choice for modern vehicles. Offers extended battery life and consistent performance, backed by a robust <b>24-month warranty</b>. Ideal for drivers prioritizing longevity and peace of mind.</p>
+
+                            <h4 class="mt-4 text-lg font-bold text-brand-charcoal">Raylite Bronze Range</h4>
+                            <p class="text-base text-gray-700">The perfect balance of performance and value. Reliable starting power for everyday vehicles, backed by a solid <b>18-month warranty</b>. A smart, economical choice without compromising quality.</p>
+                            
+                            <a href="contact.html" class="mt-6 inline-block font-bold text-brand-charcoal hover:text-black transition-colors duration-300 group">Find the right warranty for your car <span class="group-hover:translate-x-1 inline-block transition-transform duration-200">&rarr;</span></a>
+                        </div>
+
+                        <!-- Product 2: Start/Stop (AGM & EFB) -->
+                        <div id="start-stop" class="p-8 bg-brand-gray-light rounded-xl shadow-lg border-l-4 border-brand-yellow transform hover:shadow-2xl transition-all duration-300">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <svg class="h-8 w-8 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 1 1 9 0v3.75M3.75 21.75h14.25a2.25 2.25 0 0 0 2.25-2.25v-10.5a2.25 2.25 0 0 0-2.25-2.25H3.75a2.25 2.25 0 0 0-2.25 2.25v10.5a2.25 2.25 0 0 0 2.25 2.25Z" /></svg>
+                                <h3 class="text-2xl font-extrabold text-brand-charcoal">Start/Stop (AGM & EFB) Solutions</h3>
+                            </div>
+                            <p class="mt-2 text-sm font-semibold text-gray-600 uppercase tracking-wider">Power designed for modern fuel efficiency.</p>
+                            <p class="mt-4 text-lg text-gray-700">Vehicles with Start/Stop systems cannot use standard batteries. We stock the specialized Raylite **AGM (Absorbed Glass Mat)** and **EFB (Enhanced Flooded Battery)** ranges. These batteries are built to handle the constant cycling and deep discharge required by this technology, ensuring your system runs efficiently without failure.</p>
+                            <ul class="mt-4 text-base text-gray-600 space-y-2 list-disc list-inside">
+                                <li>AGM for higher performance and maximum cycling life.</li>
+                                <li>EFB as a cost-effective, durable solution for standard Start/Stop cars.</li>
+                                <li>Expert fitment required to maintain system integrity.</li>
+                            </ul>
+                            <a href="services.html#expert-fitment" class="mt-6 inline-block font-bold text-brand-charcoal hover:text-black transition-colors duration-300 group">Learn about Start/Stop fitment &rarr;</a>
+                        </div>
+
+                        <!-- Product 3: Deep Cycle & Specialized Power -->
+                        <div id="specialized" class="p-8 bg-brand-gray-light rounded-xl shadow-lg border-l-4 border-brand-yellow transform hover:shadow-2xl transition-all duration-300">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <svg class="h-8 w-8 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg>
+                                <h3 class="text-2xl font-extrabold text-brand-charcoal">Deep Cycle & Backup Power</h3>
+                            </div>
+                            <p class="mt-2 text-sm font-semibold text-gray-600 uppercase tracking-wider">Reliable power for off-grid, solar & leisure use.</p>
+                            <p class="mt-4 text-lg text-gray-700">Deep cycle batteries are designed to provide sustained power over long periods, making them ideal for caravans, boats, golf carts, and essential backup power systems. We stock high-quality Raylite Deep Cycle and AGM units tailored for continuous power delivery and maximum recharge cycles.</p>
+                            <ul class="mt-4 text-base text-gray-600 space-y-2 list-disc list-inside">
+                                <li>Solar battery solutions for residential and commercial backup.</li>
+                                <li>Deep Cycle units optimized for leisure vehicles and marine use.</li>
+                                <li>Lithium-ion options available for lightweight, long-lasting power.</li>
+                            </ul>
+                            <a href="contact.html" class="mt-6 inline-block font-bold text-brand-charcoal hover:text-black transition-colors duration-300 group">Consult a Deep Cycle expert &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Final Conversion Driver (CTA) - Identical to other pages -->
+        <section class="bg-brand-dark">
+            <div class="max-w-4xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                    <span class="block">Ready for Unstoppable Power?</span>
+                    <span class="block text-brand-yellow">Visit Your Raylite Specialists in Centurion.</span>
+                </h2>
+                <p class="mt-4 text-lg leading-6 text-gray-300">Stop by our Hennopspark branch for a free test and let our experts find the perfect battery for your needs.</p>
+                <a href="contact.html" class="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-brand-dark bg-brand-yellow hover:bg-yellow-300 sm:w-auto">
+                    Contact The Centurion Team
+                </a>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- FOOTER V2 - Identical to other pages -->
+    <footer id="contact-footer" class="bg-black text-gray-400">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="xl:grid xl:grid-cols-4 xl:gap-8">
+                <div class="space-y-8 xl:col-span-1">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <img class="h-10 w-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREMdsebtTlTcxvyDlVN6a5Cunw3qUDtHvbuoCcxKLGCjQVCIBaqONXl1I&s=10" alt="First Battery Centre Logo">
+                        <span class="text-white text-lg font-bold">First Battery Centre<br>Centurion</span>
+                    </a>
+                    <p class="text-sm">Your local experts for all automotive, leisure, and commercial battery needs in Centurion.</p>
+                    <div class="flex flex-col space-y-2 text-sm">
+                        <p class="text-sm font-semibold text-white tracking-wider uppercase">Operating Hours</p>
+                        <p>Monday - Friday: 08:00 - 17:00</p>
+                    </div>
+                </div>
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-3">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Quick Links</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li><a href="index.html" class="text-base hover:text-white">Home</a></li>
+                                <li><a href="#main-battery-content" class="text-base hover:text-white">Our Batteries</a></li>
+                                <li><a href="services.html" class="text-base hover:text-white">Our Services</a></li>
+                                <li><a href="contact.html" class="text-base hover:text-white">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Our Expertise</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li><a href="services.html#free-battery-testing" class="text-base hover:text-white">Free Battery Testing</a></li>
+                                <li><a href="services.html#expert-fitment" class="text-base hover:text-white">Expert Fitment</a></li>
+                                <li><a href="services.html#specialist-power" class="text-base hover:text-white">Specialist Power Solutions</a></li>
+                                <li><a href="#specialized" class="text-base hover:text-white">Commercial & Solar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-1 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Hennopspark Contact</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li class="text-base">203 Edison Crescent,<br>Hennopspark, Centurion, 0172</li>
+                                <li><a href="tel:0125344900" class="text-base hover:text-white">012 534 4900</a></li>
+                                <li><a href="mailto:fbccenturion@gmail.com" class="text-base hover:text-white">fbccenturion@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8">
+                <p class="text-base text-center">&copy; 2025 First Battery Centre Centurion. All rights reserved.</p>
+            </div>
+        </footer>
+
+    <script>
+        // --- Mobile Menu Toggle ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const openIcon = mobileMenuButton.querySelector('svg.block');
+        const closeIcon = mobileMenuButton.querySelector('svg.hidden');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            openIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

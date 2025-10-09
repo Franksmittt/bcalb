@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Battery Advice, Tips & Guides for Centurion Drivers | First Battery Centre</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -62,60 +60,48 @@
 </head>
 <body class="bg-white">
 
-    <!-- HEADER V5 - Identical to other pages -->
     <header class="bg-black shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center">
-                    <div class="hidden md:flex flex-shrink-0 items-center">
-                        <a href="index.html" class="flex items-center space-x-3">
-                           <img class="h-10 w-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREMdsebtTlTcxvyDlVN6a5Cunw3qUDtHvbuoCcxKLGCjQVCIBaqONXl1I&s=10" alt="First Battery Centre Logo">
-                            <span class="text-white text-xl font-extrabold tracking-tight">First Battery Centre <span class="font-semibold text-brand-yellow">Centurion</span></span>
-                        </a>
-                    </div>
-                    <div class="flex md:hidden flex-shrink-0 items-center">
-                         <a href="index.html"><img class="h-10 w-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREMdsebtTlTcxvyDlVN6a5Cunw3qUDtHvbuoCcxKLGCjQVCIBaqONXl1I&s=10" alt="First Battery Centre Logo"></a>
-                    </div>
+                    <a href="index.html" class="flex items-center space-x-3">
+                       <img class="h-10 w-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREMdsebtTlTcxvyDlVN6a5Cunw3qUDtHvbuoCcxKLGCjQVCIBaqONXl1I&s=10" alt="First Battery Centre Logo">
+                        <span class="hidden md:block text-white text-xl font-extrabold tracking-tight">First Battery Centre <span class="font-semibold text-brand-yellow">Centurion</span></span>
+                    </a>
                 </div>
                 <div class="flex-1 flex items-center justify-center">
                     <nav class="hidden md:flex items-center space-x-8">
                         <a href="index.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative nav-link-hover transition-colors duration-300">Home</a>
-                        <a href="batteries.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative nav-link-hover transition-colors duration-300">Our Batteries</a>
-                        <a href="services.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative nav-link-hover transition-colors duration-300">Our Services</a>
-                        <a href="contact.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative nav-link-hover transition-colors duration-300">Contact & Location</a>
+                        <a href="our-batteries.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative nav-link-hover transition-colors duration-300">Our Batteries</a>
+                        <a href="our-services.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative nav-link-hover transition-colors duration-300">Our Services</a>
+                        <a href="our-blog.html" class="text-white px-3 py-2 rounded-md text-sm font-medium relative nav-link-hover transition-colors duration-300">Our Blog</a>
+                        <a href="contact.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative nav-link-hover transition-colors duration-300">Contact</a>
                     </nav>
                     <div class="flex md:hidden"><span class="text-white text-lg font-bold">Centurion</span></div>
                 </div>
                 <div class="flex items-center justify-end">
                     <div class="hidden md:block ml-4">
-                        <a href="contact.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-bold rounded-md text-brand-dark bg-brand-yellow hover:bg-yellow-300 transition-transform duration-200 hover:scale-105">Book a FREE Battery Check</a>
+                        <a href="contact.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-bold rounded-md text-brand-dark bg-brand-yellow hover:bg-yellow-300">Book a FREE Battery Check</a>
                     </div>
-                    <div class="-mr-2 flex md:hidden">
-                        <button id="mobile-menu-button" type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
-                            <span class="sr-only">Open main menu</span>
-                            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
-                            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
-                        </button>
-                    </div>
+                    <div class="-mr-2 flex md:hidden"><button id="mobile-menu-button" type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white"><span class="sr-only">Open main menu</span><svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg><svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></button></div>
                 </div>
             </div>
         </div>
         <div class="md:hidden hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="batteries.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Our Batteries</a>
-                <a href="services.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Our Services</a>
-                <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact & Location</a>
+                <a href="our-batteries.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Our Batteries</a>
+                <a href="our-services.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Our Services</a>
+                <a href="our-blog.html" class="text-white bg-gray-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Our Blog</a>
+                <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
             </div>
             <div class="pt-4 pb-3 border-t border-gray-700">
-                <div class="flex items-center px-5"><a href="contact.html" class="w-full text-center items-center px-4 py-3 border border-transparent text-base font-bold rounded-md text-brand-dark bg-brand-yellow hover:bg-yellow-300">Book a FREE Battery Check</a></div>
-                <div class="mt-4 px-5 pb-3"><p class="text-center text-xs font-semibold text-gray-400 tracking-wider uppercase">First Battery Centre: Centurion</p></div>
+                <div class="px-5"><a href="contact.html" class="block w-full text-center px-4 py-3 font-bold rounded-md text-brand-dark bg-brand-yellow">Book a FREE Check</a></div>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- BLOG INDEX HEADER / H1 (SEO Focused) -->
         <section id="blog-hero" class="text-white text-center">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <p class="text-base font-semibold text-brand-yellow uppercase tracking-wider">The First Battery Centre Knowledge Hub</p>
@@ -128,87 +114,57 @@
             </div>
         </section>
 
-        <!-- BLOG LISTING & SIDEBAR -->
         <section class="bg-white py-16 sm:py-24">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="lg:grid lg:grid-cols-12 lg:gap-12">
                     
-                    <!-- Main Content Column (Blog Post Cards) -->
                     <div class="lg:col-span-8 space-y-10">
                         
-                        <!-- Blog Card 1: Raylite Ultimate Guide (The existing post) -->
                         <div class="bg-brand-gray-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-brand-yellow">
                             <p class="text-sm font-semibold text-brand-charcoal uppercase">Local Services & Testing</p>
-                            <h2 class="mt-1 text-2xl font-extrabold text-brand-charcoal hover:text-brand-dark transition-colors"><a href="blog_post_template.html">Car Battery Dead? Your Ultimate Guide to Raylite Batteries in Centurion</a></h2>
-                            <p class="mt-2 text-base text-gray-600">It's the worst feeling. You’re leaving Centurion Mall and your car is dead. This guide shows why Raylite is the only solution and how to find the perfect battery at our Hennopspark branch.</p>
-                            <div class="mt-4 flex items-center justify-between">
-                                <p class="text-sm text-gray-500">By Centurion Team | 5 min read</p>
-                                <a href="blog_post_template.html" class="font-bold text-brand-charcoal hover:text-black transition-colors duration-300 group">Read More <span class="group-hover:translate-x-1 inline-block transition-transform duration-200">&rarr;</span></a>
-                            </div>
-                        </div>
-
-                        <!-- Blog Card 2: Free Check (High-Intent LSI) -->
-                        <div class="bg-brand-gray-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-brand-yellow">
-                            <p class="text-sm font-semibold text-brand-charcoal uppercase">Local Services & Testing</p>
-                            <h2 class="mt-1 text-2xl font-extrabold text-brand-charcoal hover:text-brand-dark transition-colors"><a href="#">Stop Guessing: Get Your Free Battery Check in Centurion</a></h2>
-                            <p class="mt-2 text-base text-gray-600">The first step to peace of mind is an expert test. We break down the full diagnostic process and how it saves Centurion drivers time and money. </p>
+                            <h2 class="mt-1 text-2xl font-extrabold text-brand-charcoal hover:text-brand-dark transition-colors"><a href="blog-free-check.html">Stop Guessing: Get Your Free, Expert Battery Check in Centurion</a></h2>
+                            <p class="mt-2 text-base text-gray-600">The first step to peace of mind is an expert test. We break down the full diagnostic process and how it saves Centurion drivers time and money.</p>
                             <div class="mt-4 flex items-center justify-between">
                                 <p class="text-sm text-gray-500">By Centurion Team | 3 min read</p>
-                                <a href="contact.html" class="font-bold text-brand-charcoal hover:text-black transition-colors duration-300 group">Read More &rarr;</a>
+                                <a href="blog-free-check.html" class="font-bold text-brand-charcoal hover:text-black transition-colors duration-300 group">Read More <span class="group-hover:translate-x-1 inline-block transition-transform duration-200">&rarr;</span></a>
                             </div>
                         </div>
 
-                        <!-- Blog Card 3: Fitment (High-Intent LSI) -->
                         <div class="bg-brand-gray-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-brand-yellow">
-                            <p class="text-sm font-semibold text-brand-charcoal uppercase">Local Services & Testing</p>
-                            <h2 class="mt-1 text-2xl font-extrabold text-brand-charcoal hover:text-brand-dark transition-colors"><a href="#">Avoid the DIY Disaster: Why Professional Battery Fitment is Critical</a></h2>
-                            <p class="mt-2 text-base text-gray-600">Modern cars require complex registration and handling. Learn why only specialists should perform battery fitment on your Start/Stop vehicle.</p>
+                            <p class="text-sm font-semibold text-brand-charcoal uppercase">Expert Fitment & Safety</p>
+                            <h2 class="mt-1 text-2xl font-extrabold text-brand-charcoal hover:text-brand-dark transition-colors"><a href="blog-professional-fitment.html">Avoid the DIY Disaster: Why Professional Battery Fitment is Critical</a></h2>
+                            <p class="mt-2 text-base text-gray-600">Modern cars require complex registration and handling. Learn why only specialists should perform battery fitment on your Start/Stop vehicle to avoid costly damage.</p>
                             <div class="mt-4 flex items-center justify-between">
                                 <p class="text-sm text-gray-500">By Centurion Team | 4 min read</p>
-                                <a href="fitment.html" class="font-bold text-brand-charcoal hover:text-black transition-colors duration-300 group">Read More &rarr;</a>
+                                <a href="blog-professional-fitment.html" class="font-bold text-brand-charcoal hover:text-black transition-colors duration-300 group">Read More <span class="group-hover:translate-x-1 inline-block transition-transform duration-200">&rarr;</span></a>
                             </div>
                         </div>
                         
-                        <!-- Blog Card 4: AGM vs EFB (VSI) -->
                         <div class="bg-brand-gray-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-brand-yellow">
-                            <p class="text-sm font-semibold text-brand-charcoal uppercase">Product & Technology</p>
-                            <h2 class="mt-1 text-2xl font-extrabold text-brand-charcoal hover:text-brand-dark transition-colors"><a href="#">AGM vs. EFB: Which Start/Stop Battery is Right for Your Centurion Commute?</a></h2>
-                            <p class="mt-2 text-base text-gray-600">Deciding between AGM and EFB technology? We break down the differences to ensure you get the exact Raylite battery your fuel-efficient car needs.</p>
+                            <p class="text-sm font-semibold text-brand-charcoal uppercase">Product Info & Peace of Mind</p>
+                            <h2 class="mt-1 text-2xl font-extrabold text-brand-charcoal hover:text-brand-dark transition-colors"><a href="blog-nationwide-warranty.html">Peace of Mind Guaranteed: Understanding Your Nationwide Warranty</a></h2>
+                            <p class="mt-2 text-base text-gray-600">Discover how our industry-leading warranty protects your investment, whether you’re at home in Hennopspark or travelling across South Africa.</p>
                             <div class="mt-4 flex items-center justify-between">
-                                <p class="text-sm text-gray-500">By Centurion Team | 6 min read</p>
-                                <a href="batteries.html" class="font-bold text-brand-charcoal hover:text-black transition-colors duration-300 group">Read More &rarr;</a>
-                            </div>
-                        </div>
-                        
-                        <!-- Blog Card 5: Alternator (Maintenance & Solutions) -->
-                        <div class="bg-brand-gray-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-brand-yellow">
-                            <p class="text-sm font-semibold text-brand-charcoal uppercase">Maintenance & Solutions</p>
-                            <h2 class="mt-1 text-2xl font-extrabold text-brand-charcoal hover:text-brand-dark transition-colors"><a href="#">Is Your Alternator Killing Your New Battery? The Real Reason Cars Won't Start</a></h2>
-                            <p class="mt-2 text-base text-gray-600">The problem might not be the battery. Learn why checking your alternator and starter motor is a crucial part of our diagnostic process.</p>
-                            <div class="mt-4 flex items-center justify-between">
-                                <p class="text-sm text-gray-500">By Centurion Team | 4 min read</p>
-                                <a href="services.html" class="font-bold text-brand-charcoal hover:text-black transition-colors duration-300 group">Read More &rarr;</a>
+                                <p class="text-sm text-gray-500">By Centurion Team | 3 min read</p>
+                                <a href="blog-nationwide-warranty.html" class="font-bold text-brand-charcoal hover:text-black transition-colors duration-300 group">Read More <span class="group-hover:translate-x-1 inline-block transition-transform duration-200">&rarr;</span></a>
                             </div>
                         </div>
                         
                     </div>
                     
-                    <!-- Sidebar (Conversion-Focused) -->
                     <div class="lg:col-span-4 mt-12 lg:mt-0">
                         <div class="sticky top-28 space-y-8">
                             
-                            <!-- Filter Section -->
                             <div class="p-6 bg-brand-gray-light rounded-lg shadow-md">
                                 <h3 class="text-xl font-bold text-brand-charcoal mb-4">Browse Topics</h3>
                                 <nav class="space-y-2">
-                                    <a href="#" class="block text-base font-bold text-brand-charcoal hover:text-brand-yellow transition-colors">All Articles (9)</a>
-                                    <a href="#" class="block text-base text-gray-700 hover:text-brand-charcoal">Local Services & Testing (3)</a>
-                                    <a href="#" class="block text-base text-gray-700 hover:text-brand-charcoal">Product & Technology (3)</a>
-                                    <a href="#" class="block text-base text-gray-700 hover:text-brand-charcoal">Maintenance & Solutions (3)</a>
+                                    <a href="#" class="block text-base font-bold text-brand-charcoal hover:text-brand-yellow transition-colors">All Articles (3)</a>
+                                    <a href="#" class="block text-base text-gray-700 hover:text-brand-charcoal">Local Services & Testing (1)</a>
+                                    <a href="#" class="block text-base text-gray-700 hover:text-brand-charcoal">Expert Fitment & Safety (1)</a>
+                                    <a href="#" class="block text-base text-gray-700 hover:text-brand-charcoal">Product Info & Peace of Mind (1)</a>
                                 </nav>
                             </div>
 
-                            <!-- Sidebar CTA: Free Checkup -->
                             <div class="p-6 bg-brand-charcoal text-white rounded-lg shadow-xl border-l-4 border-brand-yellow">
                                 <h3 class="text-xl font-bold text-brand-yellow">Stop Reading, Start Driving.</h3>
                                 <p class="mt-2 text-base text-gray-300">Need immediate peace of mind? Drive into our Hennopspark branch for your <b>free, no-obligation battery test</b> today.</p>
@@ -217,12 +173,11 @@
                                 </a>
                             </div>
 
-                            <!-- Sidebar CTA 3: Contact Details -->
                             <div class="p-6 bg-white rounded-lg shadow-md border border-gray-200">
                                 <h3 class="text-xl font-bold text-brand-charcoal">Quick Contact</h3>
-                                <ul class="mt-3 space-y-2">
-                                    <li class="flex items-center space-x-2 text-gray-700"><svg class="h-5 w-5 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0L6.343 16.657a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg><span class="text-base">203 Edison Crescent, 0172</span></li>
-                                    <li class="flex items-center space-x-2 text-gray-700"><svg class="h-5 w-5 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.128a11.05 11.05 0 005.45 5.45l1.128-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C7.82 21 3 16.18 3 10V5z"/></svg><a href="tel:0125344900" class="text-base hover:text-brand-charcoal">012 534 4900</a></li>
+                                <ul class="mt-3 space-y-2 text-gray-700">
+                                    <li class="flex items-center space-x-2"><svg class="h-5 w-5 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0L6.343 16.657a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg><span class="text-base">203 Edison Crescent, 0172</span></li>
+                                    <li class="flex items-center space-x-2"><svg class="h-5 w-5 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.128a11.05 11.05 0 005.45 5.45l1.128-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C7.82 21 3 16.18 3 10V5z"/></svg><a href="tel:0125344900" class="text-base hover:text-brand-charcoal">012 534 4900</a></li>
                                 </ul>
                             </div>
 
@@ -233,9 +188,8 @@
         </section>
         
     </main>
-
-    <!-- FOOTER V2 - Identical to other pages -->
-    <footer id="contact-footer" class="bg-black text-gray-400">
+    
+    <footer class="bg-black text-gray-400">
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
             <div class="xl:grid xl:grid-cols-4 xl:gap-8">
                 <div class="space-y-8 xl:col-span-1">
@@ -244,10 +198,6 @@
                         <span class="text-white text-lg font-bold">First Battery Centre<br>Centurion</span>
                     </a>
                     <p class="text-sm">Your local experts for all automotive, leisure, and commercial battery needs in Centurion.</p>
-                    <div class="flex flex-col space-y-2 text-sm">
-                        <p class="text-sm font-semibold text-white tracking-wider uppercase">Operating Hours</p>
-                        <p>Monday - Friday: 08:00 - 17:00</p>
-                    </div>
                 </div>
                 <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-3">
                     <div class="md:grid md:grid-cols-2 md:gap-8">
@@ -255,24 +205,25 @@
                             <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Quick Links</h3>
                             <ul role="list" class="mt-4 space-y-4">
                                 <li><a href="index.html" class="text-base hover:text-white">Home</a></li>
-                                <li><a href="batteries.html" class="text-base hover:text-white">Our Batteries</a></li>
-                                <li><a href="services.html" class="text-base hover:text-white">Our Services</a></li>
+                                <li><a href="our-batteries.html" class="text-base hover:text-white">Our Batteries</a></li>
+                                <li><a href="our-services.html" class="text-base hover:text-white">Our Services</a></li>
+                                <li><a href="our-blog.html" class="text-base hover:text-white">Our Blog</a></li>
                                 <li><a href="contact.html" class="text-base hover:text-white">Contact Us</a></li>
                             </ul>
                         </div>
                         <div class="mt-12 md:mt-0">
                             <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Our Expertise</h3>
                             <ul role="list" class="mt-4 space-y-4">
-                                <li><a href="services.html#free-battery-testing" class="text-base hover:text-white">Free Battery Testing</a></li>
-                                <li><a href="fitment.html" class="text-base hover:text-white">Expert Fitment</a></li>
-                                <li><a href="services.html#specialist-power" class="text-base hover:text-white">Specialist Power Solutions</a></li>
-                                <li><a href="batteries.html" class="text-base hover:text-white">Commercial & Solar</a></li>
+                                <li><a href="our-services.html" class="text-base hover:text-white">Free Battery Testing</a></li>
+                                <li><a href="expert-fitment.html" class="text-base hover:text-white">Expert Fitment</a></li>
+                                <li><a href="our-batteries.html" class="text-base hover:text-white">Solar & Backup Power</a></li>
+                                <li><a href="our-batteries.html" class="text-base hover:text-white">Commercial Solutions</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="md:grid md:grid-cols-1 md:gap-8">
                         <div>
-                            <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Hennopspark Contact</h3>
+                            <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Visit Us</h3>
                             <ul role="list" class="mt-4 space-y-4">
                                 <li class="text-base">203 Edison Crescent,<br>Hennopspark, Centurion, 0172</li>
                                 <li><a href="tel:0125344900" class="text-base hover:text-white">012 534 4900</a></li>
@@ -285,7 +236,8 @@
             <div class="mt-12 border-t border-gray-700 pt-8">
                 <p class="text-base text-center">&copy; 2025 First Battery Centre Centurion. All rights reserved.</p>
             </div>
-        </footer>
+        </div>
+    </footer>
 
     <script>
         // --- Mobile Menu Toggle ---
